@@ -1,0 +1,121 @@
+.skills {
+  background: var(--bg-secondary);
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* ── Card ── */
+.skills__card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-top: 3px solid transparent;
+  border-radius: var(--radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.skills__card:hover {
+  border-color: var(--border-accent);
+  border-top-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.15);
+}
+
+/* Alternate cards get amber top border on hover */
+.skills__card:nth-child(even):hover {
+  border-top-color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.30);
+  box-shadow: 0 12px 40px rgba(245, 158, 11, 0.10);
+}
+
+/* ── Card Header ── */
+.skills__card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skills__card-icon {
+  width: 42px;
+  height: 42px;
+  background: var(--accent-dim);
+  border: 1px solid var(--border-accent);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.skills__card:nth-child(even) .skills__card-icon {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.skills__card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+}
+
+/* ── Skill Chips ── */
+.skills__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills__chip {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  padding: 5px 12px;
+  border-radius: 100px;
+  border: 1px solid var(--border-accent);
+  color: var(--lavender);
+  background: var(--accent-dim);
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.skills__chip:hover {
+  background: rgba(124, 58, 237, 0.22);
+  color: #ffffff;
+  border-color: var(--accent);
+  transform: translateY(-1px);
+}
+
+/* Alternate card chips get amber styling */
+.skills__card:nth-child(even) .skills__chip {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+
+.skills__card:nth-child(even) .skills__chip:hover {
+  background: rgba(245, 158, 11, 0.18);
+  color: #ffffff;
+  border-color: #f59e0b;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}

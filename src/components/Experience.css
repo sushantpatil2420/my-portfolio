@@ -1,0 +1,137 @@
+.exp__timeline {
+  position: relative;
+  padding-left: 36px;
+}
+
+.exp__timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent), rgba(124, 58, 237, 0.15));
+}
+
+.exp__item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.exp__item:last-child {
+  margin-bottom: 0;
+}
+
+.exp__dot {
+  position: absolute;
+  left: -32px;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg-primary);
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.25);
+}
+
+.exp__card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.exp__card:hover {
+  border-color: var(--border-accent);
+  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.15);
+  transform: translateY(-2px);
+}
+
+.exp__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.exp__role {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.exp__company {
+  font-size: 0.88rem;
+  color: #f59e0b;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.exp__period {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.exp__badge {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.30);
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.exp__points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.exp__point {
+  display: flex;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.exp__arrow {
+  color: var(--accent);
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  margin-top: 3px;
+}
+
+.exp__cert-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--lavender);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity var(--transition);
+}
+
+.exp__cert-link:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 600px) {
+  .exp__header { flex-direction: column; }
+  .exp__card { padding: 20px 16px; }
+}
+
+.experience {
+  background: var(--bg-secondary);
+}

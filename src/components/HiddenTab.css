@@ -1,0 +1,113 @@
+.hidden-tab {
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.ht__wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* ── Top label ── */
+.ht__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.ht__label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.ht__line {
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+/* ── Heading ── */
+.ht__heading {
+  font-family: var(--font-mono);
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+/* ── Subtext ── */
+.ht__subtext {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+/* ── Quote ── */
+.ht__quote {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+  letter-spacing: 0.04em;
+  padding: 0 16px;
+  border-left: 2px solid var(--accent);
+  text-align: left;
+}
+
+/* ── Enter button ── */
+.ht__enter-btn {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  color: var(--lavender);
+  text-decoration: none;
+  margin-top: 8px;
+  padding: 12px 28px;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent-dim);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all var(--transition);
+}
+
+.ht__enter-btn:hover {
+  background: rgba(124, 58, 237, 0.2);
+  border-color: var(--accent);
+  color: #ffffff;
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-2px);
+}
+
+.ht__arrow {
+  display: inline-block;
+  transition: transform var(--transition);
+}
+
+.ht__enter-btn:hover .ht__arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 600px) {
+  .ht__heading {
+    font-size: 1.3rem;
+  }
+  .ht__subtext {
+    font-size: 0.8rem;
+  }
+}

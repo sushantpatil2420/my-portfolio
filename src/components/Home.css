@@ -1,0 +1,94 @@
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: var(--nav-height);
+  background:
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(124, 58, 237, 0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 10% 80%, rgba(224, 215, 255, 0.04) 0%, transparent 60%);
+}
+
+.home__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__greeting {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--lavender);
+  margin-bottom: 12px;
+  letter-spacing: 0.08em;
+}
+
+.home__name {
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.home__role {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 600;
+  color: var(--lavender);
+  margin-bottom: 20px;
+}
+
+.home__bio {
+  font-size: 0.98rem;
+  color: var(--text-secondary);
+  max-width: 500px;
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+
+.home__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  justify-content: center;
+}
+
+.home__socials {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home__social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.home__social-link:hover {
+  color: var(--lavender);
+  border-color: var(--lavender);
+  background: rgba(224, 215, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .home__actions { flex-direction: column; align-items: center; }
+  .home__actions .btn { width: 100%; justify-content: center; }
+}
