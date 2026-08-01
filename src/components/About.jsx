@@ -6,6 +6,9 @@ const certifications = [
   { name: 'Cybersecurity Analyst Simulation', issuer: 'TATA',         icon: '🔒' },
   { name: 'Web Development',               issuer: 'Great Learning',  icon: '🌐' },
   { name: 'MySQL',                         issuer: 'Great Learning',  icon: '🗄' },
+
+
+
 ]
 
 const education = [

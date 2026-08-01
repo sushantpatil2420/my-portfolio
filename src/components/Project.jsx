@@ -26,6 +26,23 @@ const projects = [
     desc: 'Full-stack blogging platform with Python Django handling backend logic, ORM models, and user authentication. Interactive front-end with HTML/CSS and JavaScript including form validation.',
     tags: ['Django', 'Python', 'JavaScript', 'SQLite'],
   },
+  
+  {
+    id: 4,
+    icon: '📚',
+    title: 'Library Management System',
+    badge: 'College',
+    desc: 'Library management system built with Java Spring Boot. Performed full CRUD operations to manage books, members, and borrowing records with a clean REST API architecture.',
+    tags: ['Java', 'Spring Boot', 'REST API', 'MySQL'],
+  },
+  {
+    id: 5,
+    icon: '🏦',
+    title: 'Banking Application',
+    badge: 'College',
+    desc: 'A banking application program built using Core Java. Supports account creation, deposits, withdrawals, balance enquiry and transaction history with object-oriented design.',
+    tags: ['Core Java', 'OOP'],
+  },
   {
     id: 3,
     icon: '🛒',
@@ -33,22 +50,6 @@ const projects = [
     badge: 'College',
     desc: 'Online shopping platform with product listing, cart management, and user authentication. Built with Java Spring Boot backend and responsive frontend using HTML, CSS and JavaScript.',
     tags: ['Java', 'Spring Boot', 'MySQL', 'JavaScript'],
-  },
-  {
-    id: 4,
-    icon: '🔐',
-    title: 'Student Login Portal',
-    badge: 'College',
-    desc: 'Secure student authentication system with role-based access for students and admins. Features session management, password hashing, and a clean dashboard built with ASP.NET and MySQL.',
-    tags: ['ASP.NET', 'MySQL', 'Bootstrap', 'MVC'],
-  },
-  {
-    id: 5,
-    icon: '📋',
-    title: 'Task Manager App',
-    badge: 'College',
-    desc: 'Full-stack task management application with create, update, delete and status tracking. Built with Django REST framework on the backend and vanilla JavaScript on the frontend.',
-    tags: ['Django', 'Python', 'JavaScript', 'SQLite'],
   },
   {
     id: 6,
