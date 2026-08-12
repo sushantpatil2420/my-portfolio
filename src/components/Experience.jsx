@@ -18,7 +18,7 @@ export default function Experience() {
                 <div>
                   <h3 className="exp__role">Software Developer Trainee</h3>
                   <p className="exp__company">Yashuma Global Venture pvt. ltd.</p>
-                  <p className="exp__period">Feb 2026 – Present · Kolhapur, Maharashtra</p>
+                  <p className="exp__period">Feb 2026 – Aug 2026 · Kolhapur, Maharashtra</p>
                 </div>
                 <span className="exp__badge">Trainee</span>
               </div>

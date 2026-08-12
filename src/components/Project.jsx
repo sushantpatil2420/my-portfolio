@@ -18,6 +18,16 @@ const projects = [
     desc: 'Order and delivery tracking system covering customer records and inventory via Spring Boot REST APIs. Admin-facing React.js dashboard for delivery scheduling and order status updates.',
     tags: ['Spring Boot', 'React.js', 'PostgreSQL'],
   },
+
+  {
+    id: 4,
+    icon: '📚',
+    title: 'Library Management System',
+    badge: 'Personal',
+    desc: 'Library management system built with Java Spring Boot. Performed full CRUD operations to manage books, members, and borrowing records with a clean REST API architecture.',
+    tags: ['Java', 'Spring Boot', 'REST API', 'MySQL'],
+  },
+
   {
     id: 2,
     icon: '✍️',
@@ -27,19 +37,12 @@ const projects = [
     tags: ['Django', 'Python', 'JavaScript', 'SQLite'],
   },
   
-  {
-    id: 4,
-    icon: '📚',
-    title: 'Library Management System',
-    badge: 'College',
-    desc: 'Library management system built with Java Spring Boot. Performed full CRUD operations to manage books, members, and borrowing records with a clean REST API architecture.',
-    tags: ['Java', 'Spring Boot', 'REST API', 'MySQL'],
-  },
+  
   {
     id: 5,
     icon: '🏦',
     title: 'Banking Application',
-    badge: 'College',
+    badge: 'Personal',
     desc: 'A banking application program built using Core Java. Supports account creation, deposits, withdrawals, balance enquiry and transaction history with object-oriented design.',
     tags: ['Core Java', 'OOP'],
   },
