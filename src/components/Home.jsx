@@ -19,7 +19,7 @@ export default function Home() {
             Sushant Patil<span className="accent">.</span>
           </h1>
 
-          <h2 className="home__role">Full Stack Developer Trainee</h2>
+          <h2 className="home__role">Java | Full Stack Developer</h2>
 
           <p className="home__bio">
             I build fast, clean and user-friendly web applications — from
