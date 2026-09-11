@@ -121,18 +121,14 @@ export default function About() {
             <div className="about__overview-card">
               <p className="about__overview-bio">
                 <p className="about__overview-bio">
-                  Hey! I'm <strong>Sushant Patil</strong>, a Full Stack
-                  Developer based in
-                  <strong> Kolhapur, Maharashtra</strong>. I hold an MSc in
-                  Computer Science with specialization in Cyber Security from
-                  CSIBER College, Kolhapur. Currently working as a{" "}
-                  <strong>Software Developer Trainee</strong> at YashUma Global
-                  Venture Pvt. Ltd., delivering production-level applications
-                  with <strong>Java Spring Boot</strong>,
-                  <strong> React.js</strong>, and <strong>PostgreSQL</strong>.
-                  Experienced in Python/Django, ASP.NET, and front-end
-                  development — writing code that is functional, clean, and
-                  security-conscious.
+                 Hi, I’m <strong>Sushant Patil</strong>, a <strong>Software Developer</strong> based in <strong>Kolhapur, Maharashtra</strong> with an <strong>M.Sc. in Computer Science
+(Cyber Security)</strong>. I specialize in building full-stack applications using <strong>Java, Spring Boot, React.js, PostgreSQL</strong> and <strong>RESTful APIs</strong>.
+
+I have hands-on experience developing production-ready applications, designing scalable backend services, building responsive user interfaces and working with relational databases. My experience also includes <strong>Spring Data JPA, Hibernate, JWT authentication and Role-Based Access Control (RBAC)</strong> with a strong focus on writing clean, secure and maintainable code.
+
+With a background in <strong>Cyber Security, Linux and Networking</strong>, I bring a security-conscious approach to software development and enjoy turning ideas into reliable, practical applications.
+
+
                 </p>
               </p>
 
